@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Basics</string>
+    <string name="button">Log in</string>
+    <string name="hint">Please, fill in your data</string>
+    <string name="hint1">Username</string>
+    <string name="hint2">Password</string>
+</resources>

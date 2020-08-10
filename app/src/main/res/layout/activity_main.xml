@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--    <com.tomer.fadingtextview.FadingTextView
+        android:id="@+id/fading_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:texts="@array/test_one"
+        app:timeout="1000"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+
+    <ImageView
+        style="@style/logo"
+        android:id="@+id/icon"
+        android:adjustViewBounds="true"
+        android:scaleX=".7"
+        android:scaleY=".7"
+        android:src="@drawable/logo_img"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        style="@style/welcomeText"
+        android:fontFamily="@font/my_custom_font"
+        android:text="Welcome to GeekTech"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        style="@style/textsDown"
+        android:background="@drawable/boxes"
+        android:id="@+id/editName"
+        android:hint="@string/hint1"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        style="@style/textsDown"
+        android:background="@drawable/boxes"
+        android:id="@+id/editPass"
+        android:hint="@string/hint2"
+        app:layout_constraintTop_toBottomOf="@+id/editName"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/signIn"
+        style="@style/signButton"
+        android:text="@string/button"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hint"
+        app:layout_constraintTop_toBottomOf="@+id/editPass"
+        android:layout_marginLeft="135dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
